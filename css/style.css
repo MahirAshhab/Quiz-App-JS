@@ -3,6 +3,7 @@
 
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 
 body{
@@ -45,9 +46,14 @@ body{
 }
 
 .question-container ul li{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     list-style-type: none;
+    cursor: pointer;
+}
+
+.question-container ul li label{
+    cursor: pointer;
 }
 
 .question-container ul li input{
@@ -65,6 +71,26 @@ body{
     font-family: inherit;
     transition: 0.5s;
     cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.quiz-completed-container{
+    text-align: center;
+    padding: 40px 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.quiz-completed-container h2{
+    padding-top: 0;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+
+.quiz-completed-container h4{
+    font-weight: 300;
+    padding: 0;
 }
 
 .question-container button:hover{
